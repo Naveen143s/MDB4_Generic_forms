@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- csss -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mdb.css' %}">
+    
+</head>
+<body>
+    <center>
+        <div class="row mt-5">
+            <div class="col-md-6 m-auto">
+              <div class="card">
+                <div class="card-header bg-primary text-white text-center">
+                  <h2>Register crendentials</h2>
+                  
+                </div>
+                <div class="card-body bg-light">
+                  <form id="user-form">
+                    <div class="form-group">
+                      <a href="{% url 'signup' %}"><button type="button" class="btn btn-primary">signup</button></a>
+                      <a href="{% url 'signin' %}"><button type="button" class="btn btn-primary">signin</button></a>
+                      
+                    </div>
+                    
+                    
+                  </form>
+                  
+                </div>
+                
+              </div>
+              
+            </div>
+            
+          </div>
+    </center>
+
+
+
+    <!-- script code -->
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/mdb.js' %}"></script>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/popper.js' %}"></script>
+    
+    
+</body>
+</html>
